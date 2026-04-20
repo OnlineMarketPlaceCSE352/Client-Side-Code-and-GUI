@@ -4,6 +4,7 @@ public class Client {
     private String name;
     private String email;
     private double balance;
+   // private ArrayList<>
 
     public Client() {
         this.name=null;

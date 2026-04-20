@@ -11,7 +11,7 @@ public class Product {
     public Product(){
         this.productName=null;
         this.productPrice=0;
-        this.serierNumber=0;
+        this.serierNumber=-1;
         this.sellerName=null;
         this.imgUrl=null;
 
