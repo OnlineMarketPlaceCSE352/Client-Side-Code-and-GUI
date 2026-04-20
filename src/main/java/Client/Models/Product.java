@@ -3,21 +3,26 @@ package Client.Models;
 public class Product {
     private String productName;
     private double productPrice;
+    private String description;
     private int serierNumber;
     private String sellerName;
-    private String clientName;
+    private String imgUrl;
+
     public Product(){
         this.productName=null;
         this.productPrice=0;
         this.serierNumber=0;
         this.sellerName=null;
-        this.clientName=null;
+        this.imgUrl=null;
+
     }
-    public Product(String pName,double pPrice,String sellerName,String clientName){
+    public Product(String pName,double pPrice,String sellerName,String description,String imgUrl){
         this.productName=pName;
+        this.description=description;
         this.productPrice=pPrice;
         this.sellerName=sellerName;
-        this.clientName=clientName;
+        this.imgUrl=imgUrl;
+
     }
     public String getProductName(){
         return this.productName;
@@ -25,13 +30,36 @@ public class Product {
     public String getSellerName(){
         return this.sellerName;
     }
-    public String getClientName(){
-        return this.clientName;
-    }
+
     public double getProductPrice(){
         return this.productPrice;
     }
-    public long getSerialNumber(){
+    public String getProductDescription(){
+        return this.description;
+    }
+    public String getImageUrl(){
+        return this.imgUrl;
+    }
+    public int getSerialNumber(){
         return this.serierNumber;
     }
+    public void setSerialNumber(int id){
+        this.serierNumber=id;
+    }
+    public void setProductName(String name){
+        this.productName=name;
+    }
+    public void setProductPrice(double price){
+        this.productPrice=price;
+    }
+    public void setSellerName(String Sname){
+        this.sellerName=Sname;
+    }
+    public void setDescription(String des){
+        this.description=des;
+    }
+    public void setImageUrl(String imgUrl){
+        this.imgUrl=imgUrl;
+    }
+
 }
